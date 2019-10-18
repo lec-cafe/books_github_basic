@@ -4,6 +4,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "linkify-it": "^2.2.0"
+    "linkify-it": "^2.2.0",
+    "vuepress": "^1.2.0"
   }
 }

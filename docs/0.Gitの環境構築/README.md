@@ -1,7 +1,8 @@
 ---
-title: Git の環境構築
 permalink: /introduction
 ---
+
+# Git の環境構築
 
 ## Git の環境構築
 
@@ -26,7 +27,9 @@ xcode-select: note: no developer tools were found at '/Applications/Xcode.app', 
 
 ## Git の設定
 
-Git を利用する前に、
+Git を利用する前に、  
+
+
 
 ```
 $ git config --global user.name "hoge"

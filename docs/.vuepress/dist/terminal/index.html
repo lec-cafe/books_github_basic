@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ターミナルの基本操作</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.9b3b816a.css" as="style"><link rel="preload" href="/assets/js/app.66161ed3.js" as="script"><link rel="preload" href="/assets/js/2.8f42fe99.js" as="script"><link rel="preload" href="/assets/js/6.6661deae.js" as="script"><link rel="prefetch" href="/assets/js/10.44ff36d9.js"><link rel="prefetch" href="/assets/js/11.8a56c68c.js"><link rel="prefetch" href="/assets/js/3.c1fe9f05.js"><link rel="prefetch" href="/assets/js/4.17953315.js"><link rel="prefetch" href="/assets/js/5.afb378e6.js"><link rel="prefetch" href="/assets/js/7.4adadcc3.js"><link rel="prefetch" href="/assets/js/8.1480200f.js"><link rel="prefetch" href="/assets/js/9.a1e0effa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9b3b816a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">hoge</a></li><li><a href="/introduction/" class="sidebar-link">Git の環境構築</a></li><li><a href="/terminal/" class="active sidebar-link">ターミナルの基本操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/terminal/#ターミナルの基本操作" class="sidebar-link">ターミナルの基本操作</a></li></ul></li><li><a href="/start_github/" class="sidebar-link">GitHubにコードをUPする</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>補足</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="ターミナルの基本操作"><a href="#ターミナルの基本操作" class="header-anchor">#</a> ターミナルの基本操作</h2> <p>Gitの操作を覚える前にまずはターミナルの操作を理解しましょう。</p> <p>ターミナルは 文字コマンドベースで PC を操作するツールです。</p> <p>Windows の Explorer や Mac の Finder のように、ターミナルでも「今いるフォルダ」という概念が存在します。</p> <p>ターミナルで、現在のフォルダを確認するには <code>pwd</code> コマンドを利用します。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token builtin class-name">pwd</span> 
+</code></pre></div><p>ターミナルを開いたときに表示されるフォルダは、<code>ホームディレクトリ</code> と呼ばれます。</p> <p>現在のターミナルで開いているフォルダを Explorer や Finder で確認するには、</p> <p>Mac の場合、</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">open</span> <span class="token builtin class-name">.</span>
+</code></pre></div><p>Windows の場合、</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ explorer <span class="token builtin class-name">.</span>
+</code></pre></div><h3 id="ディレクトリの作成、ファイルの作成"><a href="#ディレクトリの作成、ファイルの作成" class="header-anchor">#</a> ディレクトリの作成、ファイルの作成</h3> <p><code>mkdir</code> コマンドを利用して、現在のディレクトリに、新しいフォルダを作成することができます。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mkdir</span> sample_site
+$ <span class="token function">mkdir</span> sample_site/public
+</code></pre></div><p><code>tough</code> コマンドを利用して、現在のディレクトリに新しいファイルを作成することができます。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">touch</span> sample_file.txt
+$ <span class="token function">touch</span> sample_site/public/index.html
+</code></pre></div><p><code>/</code> を利用して深い階層のディレクトリにもディレクトリ、ファイルを作成することが可能です。</p> <h3 id="ディレクトリの確認・移動"><a href="#ディレクトリの確認・移動" class="header-anchor">#</a> ディレクトリの確認・移動</h3> <p><code>ls</code> コマンドで、ディレクトリを移動することができます。</p> <p><code>ls</code> コマンドで、 <code>ls -al</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ls</span> -al 
+</code></pre></div><p>現在のディレクトリは、 <code>cd</code> で移動することができます。</p> <p>cd する</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token builtin class-name">cd</span> sample_site
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/introduction/" class="prev">Git の環境構築</a></span> <span class="next"><a href="/start_github/">GitHubにコードをUPする</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.66161ed3.js" defer></script><script src="/assets/js/2.8f42fe99.js" defer></script><script src="/assets/js/6.6661deae.js" defer></script>
+  </body>
+</html>
