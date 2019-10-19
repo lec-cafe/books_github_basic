@@ -155,6 +155,6 @@ $ git commit -m "add html code"
 $ git push origin master
 ```
 
-::: TRY**
+::: TRY
 [Netlify](/9_netlify) のページを確認しながら GitHub にUPされたコードをWebサイトとして公開してみましょう。
 :::
