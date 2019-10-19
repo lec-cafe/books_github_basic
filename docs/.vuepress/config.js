@@ -48,7 +48,7 @@ GIthub のチームでの使い方 ( Issue / Pull Request )    `,
                 ]
             },
         ],
-        repo: 'lec-cafe/book_git_intro',
+        repo: 'lec-cafe/book_github_intro',
         repoLabel: 'Github',
         docsDir: 'books',
         editLinks: true,

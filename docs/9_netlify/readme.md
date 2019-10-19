@@ -1,7 +1,7 @@
 ---
-title: Netlify を使ってWebサイトをUpする
 permalink: /netlify
 ---
+# Netlify を使ってWebサイトをUpする
 
 Netlify を利用すれば、Netlify に自分のGitHub リポジトリからWebサイトをUPすることができます。
 
