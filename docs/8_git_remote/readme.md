@@ -29,5 +29,5 @@ $ git remote rm {TARGET_REMOTE_NAME}
 `remote rename` コマンドはすでに追加されたリモートの名前を変更します。引数に名前を変更する対象のリモート名と新しいリモート名を取ります。
 
 ```bash
-$ git remote rm {TARGET_REMOTE_NAME} {NEW_REMOTE_NAME}
+$ git remote rename {TARGET_REMOTE_NAME} {NEW_REMOTE_NAME}
 ```
