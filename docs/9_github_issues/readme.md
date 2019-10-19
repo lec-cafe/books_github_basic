@@ -1,5 +1,5 @@
 ---
-permalink: /netlify
+permalink: /github_issues
 ---
 
 # GitHub Issue の活用
@@ -29,4 +29,14 @@ Issue 番号に自動的にリンクが付与され、
 
 ## Issue の自動 Close 
 
-作業が完了した Issue 
+作業が完了した Issue は Close することで Issue の一覧から非表示にすることができます。
+
+Issue は Issue の画面上から Close する他にも Git の操作で自動的に Close 処理を行うことも可能になっています。
+
+例えば コミットコメントに `fix #52` と記述して送信されたコミットを、
+
+GitHub の master ブランチに Push すると #52 の Issue は自動的に Close されます。
+
+Pull Request でも 本文の欄に `fix #52` と記述することで、
+Pull Request がマージされた際に自動的に Issue を Close するよう設定することが可能です。
+

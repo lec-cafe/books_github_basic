@@ -42,9 +42,16 @@ GIthub のチームでの使い方 ( Issue / Pull Request )    `,
             '/3.branch/',
             '/4.github_workflow/',
             {
+                title: 'いろいろなGitコマンド',
+                children: [
+                    '/8_git_remote/',
+                ]
+            },
+            {
                 title: '補足',
                 children: [
                     '/9_netlify/',
+                    '/9_github_issues/',
                 ]
             },
         ],
