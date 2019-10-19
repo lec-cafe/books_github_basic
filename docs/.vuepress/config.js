@@ -44,6 +44,7 @@ GIthub のチームでの使い方 ( Issue / Pull Request )    `,
             {
                 title: 'いろいろなGitコマンド',
                 children: [
+                    '/8_git_status/',
                     '/8_git_remote/',
                     '/8_git_push/',
                 ]
