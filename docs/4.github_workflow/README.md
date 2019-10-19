@@ -77,6 +77,10 @@ Fork したリポジトリにコミットを送信しても、自分の Fork 先
 Fork 先に Push したコミットを、元のリポジトリに取り込むには、
 Pull Request と呼ばれる機能を用いて、GitHub 上で取込リクエストを送ることができます。
 
+![](/images/4.pullrequest.png)
+
+PullRequest を作成したら、commit や  Files changed のタブから、
+自分の送信した Pull Request が送信したい内容の意図とあっているか必ず確認するようにしましょう。
 
 ### pull してデータを取得する
 
