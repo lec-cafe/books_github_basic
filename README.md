@@ -1,8 +1,8 @@
 ## Terminal での Git/Github入門
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/65e21c31-069f-4d86-9a58-00d48df0b898/deploy-status)](https://app.netlify.com/sites/books-laravelapi-basic/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8e092402-7297-4114-9c97-e1e9ed77f8a4/deploy-status)](https://app.netlify.com/sites/books-github-intro/deploys)
 
-https://laravelapi-basic.lec.cafe/
+https://github-basic.lec.cafe/
 
 ## Usage
 
@@ -20,22 +20,18 @@ $ yarn run docs:dev
 
 ## Contents
 
-Laravel を 利用してREST API を作成するフローを紹介します。
+Terminal (黒い画面) を使っての Git/Github の使い方をマスターします。
 
-Laravel ならではの Database 操作や ルートの記述などを利用して
-SPA アプリケーションなどで活用可能な REST API を構築してみましょう。
+Githubを操作しながら Web サイトの公開ができる Netlify を利用して、 実際のWebサイト制作をイメージしながら Git の操作を体験してみましょう。
+
+- Git の基本操作 (コミット・ブランチの操作)
+- Github の使い方 （push / pull）
+- GIthub のチームでの使い方 ( Issue / Pull Request )
 
 ## こんな方におすすめ
 
 資料は全てサンプルコード付きで紹介しますので、初心者の方も安心してご参加いただけます。
 
-- Laravel を使った REST API開発の仕組みを体験したい方
-- REST API の開発をよりシンプルに進めたい方
-- REST API の開発フローを効率的に改善したい方
-
-## Ref 
-
-
-**lec-cafe/lec-cafe**
-
-https://github.com/lec-cafe/lec-cafe
+- 黒い画面を使ったGit の操作に興味がある方
+- Git/Github を使ったワークフローに興味がある方
+- Netlify を使ったサイト公開に興味がある方
