@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev books",
+    "docs:build": "vuepress build books"
   },
   "dependencies": {
     "linkify-it": "^2.2.0",
