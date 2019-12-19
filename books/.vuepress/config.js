@@ -47,6 +47,8 @@ GIthub のチームでの使い方 ( Issue / Pull Request )    `,
                     '/8_git_status/',
                     '/8_git_remote/',
                     '/8_git_push/',
+                    '/8_git_remote/',
+                    '/8_git_status/',
                 ]
             },
             {
