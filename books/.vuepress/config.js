@@ -56,6 +56,7 @@ GIthub のチームでの使い方 ( Issue / Pull Request )    `,
                 children: [
                     '/9_netlify/',
                     '/9_github_issues/',
+                    '/9_github_actions/'
                 ]
             },
         ],
