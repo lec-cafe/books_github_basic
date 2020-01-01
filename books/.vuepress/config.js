@@ -52,10 +52,12 @@ GIthub のチームでの使い方 ( Issue / Pull Request )    `,
                 ]
             },
             {
-                title: '補足',
+                title: 'GitHub の活用',
                 children: [
                     '/9_netlify/',
                     '/9_github_issues/',
+                    '/9_github_pullrequest/',
+                    '/9_github_flow/',
                     '/9_github_actions/'
                 ]
             },
