@@ -47,6 +47,14 @@ Git を利用する前に、Git のユーザ設定が必要です。
 
 Git ではバージョン履歴を記録する際に、ユーザ名と Email アドレスが必要になります。 
 
+現在の Git の設定状況は、 `git config -l` コマンドで確認できます。
+
+```bash
+$ git config -l
+```
+
+`user.email` や `user.name` の項目が表示されない場合は、ユーザ情報が未登録です。
+ 
 各環境のターミナルアプリで以下のようなコマンドを実行して、
 ユーザ名とEmailアドレスを登録しておきましょう。
 
@@ -54,6 +62,11 @@ Git ではバージョン履歴を記録する際に、ユーザ名と Email ア
 $ git config --global user.name "hoge"
 $ git config --global user.email "hoge@example.com"
 ```
+
+::: tip
+`hoge` となっている箇所は、適宜ユーザ名に変更してください。
+email と name は GitHub で利用しているものと揃えておくと良いでしょう。
+:::
  
 ## GitHub のアカウント作成
 
