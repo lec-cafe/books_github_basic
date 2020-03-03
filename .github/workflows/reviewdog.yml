@@ -1,0 +1,19 @@
+jobs:
+  custom_actions:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Hello world action step
+      uses: ./.github/actions/sample_action # Uses an action in the root directory
+      id: hello
+      with:
+        who-to-greet: 'Mona the Octocat'
+    # `hello`ステップからの出力を利用
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Install Dependencies
+      run: |
+        npm ci
+    - name: Execute tests
+      run: |
+        npm run test
