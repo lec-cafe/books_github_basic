@@ -1,0 +1,12 @@
+name: Simple Jobs
+
+on: [push]
+
+jobs:
+  simple:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Sample Task
+        run: |
+          echo "sample task"
