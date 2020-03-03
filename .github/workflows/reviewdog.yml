@@ -1,20 +1,19 @@
-name: reviewdog
-on:
-  pull_request:
-    types: [opened, synchronize]
 jobs:
-  eslint:
-    name: eslint
+  custom_actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: yarn install
-        run: yarn install
-      - name: eslint review
-        uses: reviewdog/action-eslint@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          eslint_flags: './**/*.{vue,ts,js}'
-      - name: eslint
-        run: yarn lint
+    - uses: actions/checkout@v1
+    - name: Hello world action step
+      uses: ./.github/actions/sample_action # Uses an action in the root directory
+      id: hello
+      with:
+        who-to-greet: 'Mona the Octocat'
+    # `hello`ステップからの出力を利用
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Install Dependencies
+      run: |
+        npm ci
+    - name: Execute tests
+      run: |
+        npm run test
